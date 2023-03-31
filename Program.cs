@@ -6,17 +6,19 @@ namespace testmaximumproblem
     {
         public static void Main(string[]args)
         {
-            Console.WriteLine("Please Enter the FirstValue:");
-            var val1 = Console.ReadLine();
-            Console.WriteLine("Please Enter the SecondValue:");
-            var val2 = Console.ReadLine();
-            Console.WriteLine("Please Enter the ThirdValue:");
-            var val3 = Console.ReadLine();
+            Console.WriteLine("Welcome to the Find Maximum values with Generics Problem");
 
-            var Value = findmaxgenerics.MaximumNum(val1, val2, val3);
-            Console.WriteLine("{0} is greater", Value);
-            Console.WriteLine("**************************************");
+            Console.WriteLine("Please enter the first number");
+            int num1 = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Please enter the second number");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter the third number");
+            int num3 = Convert.ToInt32(Console.ReadLine());
+
+            int val = FindMaxInteger_UC1.MaximumIntegerNumber(num1, num2, num3);
+            Console.WriteLine("{0} IS GREATER  NUMBER.", val);
 
         }
 
